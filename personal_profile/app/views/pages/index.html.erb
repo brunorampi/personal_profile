@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bruno's</title>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment-with-locales.min.js"></script>
+  </head>
+
+  </head>
+  <body>
+
+    <a href=/topics/new class="btn-floating btn-large waves-effect waves-light "><i class="material-icons">add</i></a>
+
+  <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <form action="topics/search" method="get">
+            <input type="text" id="autocomplete-input" class="autocomplete" name="title" placeholder="Please, enter your preferred topic" autocomplete="off">
+            <label for="autocomplete-input">What are you looking for?</label>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id =quotes>
+      <p id=changeText class="grey-text text-darken-3 lighten-3"></p>
+
+      <script type="text/javascript">
+         var text = ["Talk is cheap. Show me the code.", "Programs must be written for people to read, and only incidentally for machines to execute.", "Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning.", "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live"];
+         var counter = 0;
+         var elem = document.getElementById("changeText");
+         setInterval(change, 5000);
+         function change() {
+          elem.innerHTML = text[counter];
+             counter++;
+             if(counter >= text.length) { counter = 0; }
+         }
+       </script>
+
+    </div>
+
+    <script>
+
+      $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+    </script>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="https://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2015/08/coding-1200x642.jpg"></div>
+    </div>
+    <div class="section white">
+      <div class="row container" id="columbus">
+        <h2 class="header">And again more coding...</h2>
+        <p id=changeText2 class="grey-text text-darken-3 lighten-3"></p>
+
+
+        <script type="text/javascript">
+           var text2 = ["That is the thing about people who think they hate computers. What they really hate is lousy programmers.", "You've baked a really lovely cake, but then you've used dog shit for frosting","Give a man a program, frustrate him for a day. Teach a man to program, frustrate him for a lifetime.","A language that doesn't affect the way you think about programming is not worth knowing"];
+           var counter1 = 0;
+           var elem1 = document.getElementById("changeText2");
+           setInterval(change1, 5000);
+           function change1() {
+            elem1.innerHTML = text2[counter1];
+               counter1++;
+               if(counter1 >= text2.length) { counter1 = 0; }
+           }
+         </script>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="http://www.theinternetdigest.net/wp-content/uploads/2015/03/html-coding.jpg"></div>
+    </div>
+    <div class="section white">
+      <div class="row container" id="columbus">
+        <h2 class="header">Don't stop coding</h2>
+        <p id=changeText2 class="grey-text text-darken-3 lighten-3"></p>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="http://i2.wp.com/simpleprogrammer.com/wp-content/uploads/2015/01/chalk_board_coding_interview.jpg"></div>
+    </div>
+
+    <%= yield %>
+
+
+  </body>
+</html>

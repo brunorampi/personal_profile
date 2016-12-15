@@ -1,0 +1,20 @@
+
+<% @search_topic.each do |topic| %>
+<div class="card">
+     <div class="card-image waves-effect waves-block waves-light">
+     <img class="activator" src="<%=topic.image%>">
+   </div>
+   <div class="card-content">
+     <span class="card-title activator grey-text text-darken-4"><%= topic.title %><i class="material-icons right">more_vert</i></span>
+     <p><%= topic.date %></p>
+   </div>
+   <div class="card-reveal">
+     <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i><%= topic.title %></span>
+     <p><span class="first_world"> Author: </span> <%= topic.author %></p>
+     <p><span class="first_world"> Description: </span> <%= topic.description %></p>
+     <p><span class="first_world"> Source: </span> <%= topic.source %></p>
+     <p><span class="first_world"> Extra Notes: </span> <%= topic.notes %></p>
+   </div>
+ </div>
+
+<% end %>

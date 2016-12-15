@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PersonalProfile</title>
+    <title>Bruno's</title>
     <%= csrf_meta_tags %>
+
+    <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Mirza|Poppins" rel="stylesheet">
+
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   </head>
+
+  <header class=banner>
+    <h1>The Coding Planner</h1>
+    <h3>Keeping track of recent state of the art technology</h3>
+  </header>
+
+  <div class="navbar-fixed">
+  <!-- Does it have to be here???  -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+      }
+    </script>
+
+    <ul class="topnav" id="myTopnav">
+      <li><a href="/" class="brand-logo">Home</a></li>
+      <li><a href="/topics/index">All arguments</a></li>
+      <li><a href="/categories/index">Categories</a></li>
+      <li >><a href="">Contacts</a></li>
+      <li class="icon">
+        <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+      </li>
+    </ul>
+  </div>
 
   <body>
     <%= yield %>

@@ -1,0 +1,180 @@
+@import "materialize/components/color";
+$primary-color: color("blue", "darken-1") !default;
+$secondary-color: color("orange", "lighten-1") !default;
+$terziary-color: color("grey", "lighten-3") !default;
+
+$primary-font: 'Mirza', cursive;
+$secondary-font: 'Poppins', sans-serif;
+@import 'materialize';
+
+body {
+  text-align: center;
+  color: $primary-color;
+	width: 92%;
+	height: 100%;
+  background-color: $terziary-color;
+  margin: 10px;
+  margin-right: 4%;
+  margin-left: 4%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+
+}
+
+#changeText {
+font-size: 1.5em;
+}
+body > div.row > div > div > div > form > label{
+  position: relative;
+  top: - 8em;
+  left: -8em;
+  font-size: larger;
+}
+.banner h1 {
+   color: $primary-color;
+   font-family: $primary-font;
+
+ }
+
+ body > header > h1 {
+   position: relative;
+   top: 0.5em;
+ }
+
+ .banner h3 {
+   color: $secondary-color;
+   font-size: 2em;
+   font-family: $secondary-font;
+
+ }
+
+
+ .navbar-fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 92%;
+}
+
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $primary-color;
+}
+
+ul.topnav li {
+  float: left;
+  width: 20%;
+  cursor: pointer;
+  font-family: $secondary-font;
+}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 14px;
+  letter-spacing: 1px;
+  // font-family: $secondary-font;
+}
+
+#myTopnav > li:nth-child(5) {
+  color:white;
+}
+
+
+ul.topnav li:hover {
+  // background-color: $tertiary-color;
+}
+
+ul.topnav li a:hover {
+  text-style: italic;
+}
+
+ul.topnav li.icon {
+  display: none;
+}
+
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+}
+
+#quotes h4 {
+  font-size: 2em;
+  font-family: $secondary-font;
+}
+
+body > div.row {
+  width: 40em;
+}
+
+body > div.row > div {
+  margin-top: 4em;
+}
+
+#changeText{
+  margin-top: 0px;
+}
+
+#changeText2 {
+  font-family: $secondary-font;
+}
+
+body > a {
+  position: relative;
+  left: 25em;
+}
+
+#autocomplete-input {
+  text-align: center;
+}
+body > div.row > form > div > a > i{
+  color: $primary-color;
+}
+
+body > div.card {
+  width: 30%;
+  color: grey;
+  display: inline-block;
+  padding:4%;
+}
+body > div:nth-child(3)
+
+.first_world {
+  color:$secondary-color
+}
+.card {
+  display: inline-block;
+  margin-right: 4%
+}
